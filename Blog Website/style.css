@@ -45,12 +45,12 @@ a{
 
 
 .main_container {
-    max-width: 65vw;
+    max-width: 85vw;
 
     margin: 0 auto;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
     overflow: hidden;
     
