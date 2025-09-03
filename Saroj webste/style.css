@@ -110,6 +110,7 @@ nav {
 
 .content {
   margin-top: 60px;
+
 }
 
 .main-section {
@@ -134,7 +135,7 @@ nav {
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -250,6 +251,7 @@ nav {
     align-items: center;
     margin-top: 3rem;
     animation: slideFromLeft 1.5s ease forwards;
+    margin-bottom: 3rem;
 }
 
 .mediaGrid{
@@ -291,4 +293,120 @@ nav {
 
 .svg-image{
     height: 1.7rem;
+}
+
+.featureContainer{
+  background-color: var(--light-gray);
+  padding: 2rem 0;
+  text-align: center;
+  
+
+}
+
+.featureContent{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.main-title{
+  font-size: 2.3rem;
+}
+
+.main-text{
+  color: var(--gray);
+  font-size: 1rem;
+  
+}
+
+.grid-info{
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  .grid-info{
+    margin: 0 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  } 
+}
+
+.feature-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  height: 270px;
+  background-color: #2563eb;
+  
+}
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 20px;
+  
+}
+
+.icon-container:hover{
+  background-color: var(--gray);
+}
+
+.feature-svg{
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
+
+.feature-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.feature-title{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.feature-desc{
+  color: white ;
+}
+
+.feature-card:nth-child(1){
+  background-color: #4a90e2;
+}
+
+.feature-card:nth-child(2){
+  background-color: #ff6289;
+}
+
+.feature-card:nth-child(3){
+  background-color: #fcbf58;
+}
+.feature-card:nth-child(4){
+  background-color: #44bfc3;
+}
+.feature-card:nth-child(5){
+  background-color: #77b0fd;
+}
+.feature-card:nth-child(6){
+  background-color: #7d78b1;
 }
