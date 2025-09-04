@@ -139,6 +139,8 @@ nav {
   }
 }
 
+
+
 .section-label {
   margin: 10px 0;
   font-size: 1.6rem;
@@ -348,6 +350,19 @@ nav {
   border-radius: 1rem;
   height: 270px;
   background-color: #2563eb;
+  animation: slideFromatRight  1.5s ease forwards;
+  
+}
+
+@keyframes slideFromatRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
   
 }
 
